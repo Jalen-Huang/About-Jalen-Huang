@@ -72,7 +72,7 @@ if (savegame !== null) {
     gameData = savegame;
 }
 if (typeof savegame.dwarves !== "undefined") gameData.dwarves = savegame.dwarves;
-if (typeof saveGame.gold !== "undefined") gameData.gold = saveGame.gold;
-if (typeof saveGame.goldPerClick !== "undefined") gameData.goldPerClick = saveGame.goldPerClick;
-if (typeof saveGame.goldPerClickCost !== "undefined") gameData.goldPerClickCost = saveGame.goldPerClickCost;
+if (typeof saveGame.money !== "undefined") gameData.money = saveGame.money;
+if (typeof saveGame.slotmultiplier !== "undefined") gameData.slotMultiplier = saveGame.slotMultiplier;
+if (typeof saveGame.slotMultiplierCost !== "undefined") gameData.slotMultiplierCost = saveGame.slotMultiplierCost;
 if (typeof saveGame.lastTick !== "undefined") gameData.lastTick = saveGame.lastTick;
