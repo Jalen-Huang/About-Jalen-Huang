@@ -5,6 +5,7 @@
  */
 
 /* global saveGame */
+"use strict";
 
 window.onload = function() {
     document.getElementById("slotMultiplierUpgrade").innerHTML = "Upgrade Slot Machine (Currently Level " + gameData.slotMultiplier + ") Cost: $" + gameData.slotMultiplierCost;
@@ -21,12 +22,12 @@ var gameData = {
 
 function tab(tab) {
   // Hide all tabs, then show the one the user selected.
-  document.getElementById("spinSlotMachineMenu").style.display = "none"
-  document.getElementById("shopMenu").style.display = "none"
-  document.getElementById(tab).style.display = "inline-block"
+  document.getElementById("spinSlotMachineMenu").style.display = "none";
+  document.getElementById("shopMenu").style.display = "none";
+  document.getElementById(tab).style.display = "inline-block";
 }
 // Go to a tab for the first time, so not all show
-tab("spinSlotMachine")
+tab("spinSlotMachineMenu");
 
 function update(id, content){
     document.getElementById(id).innerHTML = content;
@@ -68,9 +69,6 @@ var saveGameLoop = window.setInterval(function() {
 }, 15000);
 
 var savegame = JSON.parse(localStorage.getItem("idleSlotMachineSave"));
-if (savegame !== null) {
-    gameData = savegame;
-}
 if (savegame !== null) {
     gameData = savegame;
 }
