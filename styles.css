@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul. 18, 2021, 4:49:43 p.m.
+    Author     : jalen.huang
+*/
+
+.title {
+    color: white;
+    /*background-color:#707070;*/
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  padding:5px 30px 30px 30px;
+  margin:30px;
+  border:solid white 1px;
+  border-radius:5px;
+  background-color:#139ddd;
+  text-align:center;
+}
+
+.money {
+  color: white;
+}
+
+body { 
+  text-align: center; /* text-align centers text AND children */
+}
+
+* { /* * applies to all elements, use with caution */
+  outline: none;
+  
+}

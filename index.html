@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title> Idle Slot Machine </title>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style = "background-color: #345179">
+        <h1 class ="title"> Idle Slot Machine </h1>
+        <p id="money" class="money"> </p>
+        <div id="navigateButtons" class = "container">
+            <button onclick="tab('spinSlotMachineMenu')">Go to the Slot Machine</button>
+            <button onclick="tab('shopMenu')">Go to Shop</button>
+        </div>
+        <div id="spinSlotMachineMenu">
+            <button onClick="spinMachine()">Spin Machine</button>
+        </div>
+        <div id="shopMenu">
+            <button onclick="buySlotMultiplierUpgrade()" id="slotMultiplierUpgrade">Upgrade Slot Machine (Currently Level gameData.) Cost: $10</button>
+        </div>
+        <script src="main.js" charset="utf-8" type="text/javascript"></script>
+    </body>
+</html>
+
